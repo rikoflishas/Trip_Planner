@@ -1,6 +1,7 @@
+import {TripCalculator} from './tripCalculator.js';
 
 // tripDestination.js
-class TripDestination {
+export class TripDestination {
     constructor() {
         this.destinations = [];  // Array to store all registered destinations
     }
@@ -10,8 +11,7 @@ class TripDestination {
         const destination = {
             city: city,
             dateAdded: new Date(),
-            transport: transport,
-            price: TripCalculator.calculateTripCost(city, transport)
+            transport: transport
         };
         
         this.destinations.push(destination);

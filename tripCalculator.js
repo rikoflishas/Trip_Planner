@@ -1,5 +1,5 @@
-// tripCalculator.js
-class TripCalculator {
+
+export class TripCalculator {
     constructor() {
         // Base prices for different expense categories
         this.price = 100;  // Basic daily cost
