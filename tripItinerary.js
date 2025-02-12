@@ -9,15 +9,16 @@ export class TripItinerary {
     }
 
     // Show the complete itinerary
-    showItinerary = (destination) => {
-        let itinerary = "Your Trip Itinerary:\n";
-        for (let i = 0; i < destination.length; i++) {
-            let trip = destination[i];
+    showItinerary = (schedule) => {
+        let itinerary = "Your Trip Itinerary:\n" + schedule;
+        console.log("-------------------- hasta aquí llegamos ---------------------")
+        for (const i in this.schedule) {
+            console.log(`Trip --> ${schedule}`);
             // console.log(`Destino: ${trip.destination}`);
             // console.log(`Fecha: ${trip.date}`);
             // console.log(`Transporte: ${trip.transport}`);
             // console.log(`Costo: $${trip.price}`);
-            console.log(`-------------------------------------`);
+            console.log(`------------------- END ------------------`);
             
         }
         return itinerary;
