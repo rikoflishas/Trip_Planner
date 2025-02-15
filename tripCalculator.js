@@ -1,4 +1,3 @@
-
 export class TripCalculator {
     constructor() {
         // Base prices for different expense categories
@@ -15,7 +14,7 @@ export class TripCalculator {
             this.price = 200;
         }   else if(city === "New York"){
             this.price = 250;
-        }
+        }else this.price = 100;
 
         //Price based on mode of transportation
         if(transport === "Plane"){
